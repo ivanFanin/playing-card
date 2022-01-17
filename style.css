@@ -1,0 +1,39 @@
+.card, .card div {
+   position: absolute;
+   width: 548px;
+   height: 767px;
+   border-radius: 25px;
+   transform: perspective(2000px)
+              rotateY(180deg);
+ }
+ 
+ .card div {
+   box-shadow: 0px 0px 10px #8d9096;
+ }
+
+ .card div:nth-child(1) {
+   background-image: repeating-linear-gradient(60deg,
+                        #e7f0ed 0px, #e7f0ed 15px,
+                        #d8bbb5 15px, #d8bbb5 25px,
+                        #d1afa6 25px, #d1afa6 35px,
+                        #f1b6a8 35px, #f1b6a8 45px,
+                        #ffefd7 45px, #ffefd7 55px),
+                    repeating-linear-gradient(-60deg,
+                        #e7f0ed 0px, #e7f0ed 15px,
+                        #d8bbb5 15px, #d8bbb5 25px,
+                        #d1afa6 25px, #d1afa6 35px,
+                        #f1b6a8 35px, #f1b6a8 45px,
+                        #ffefd7 45px, #ffefd7 55px);
+                    background-blend-mode: multiply;
+ }
+  
+ .card div:nth-child(2) {
+   background-image: url('./img/Cards-3-Club.svg\ .png');
+   background-color: #fff;
+   backface-visibility: hidden;
+ }
+
+ body {
+   padding-top: 80px;
+   padding-left: 80px;
+   }
